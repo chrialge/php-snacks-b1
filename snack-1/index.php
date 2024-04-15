@@ -13,26 +13,26 @@ $matches = [
         'guest_score_team' => 60,
     ],
     [
-        'squad_home' => 'Bergamo',
-        'squad_trasfert' => 'Livorno',
+        'home_team' => 'Bergamo',
+        'guest_team' => 'Livorno',
         'home_score_team' => 60,
         'guest_score_team' => 40,
     ],
     [
-        'squad_home' => 'Cesena',
-        'squad_trasfert' => 'Palermo',
+        'home_team' => 'Cesena',
+        'guest_team' => 'Palermo',
         'home_score_team' => 75,
         'guest_score_team' => 67,
     ],
     [
-        'squad_home' => 'Torino',
-        'squad_trasfert' => 'Firenzw',
+        'home_team' => 'Torino',
+        'guest_team' => 'Firenzw',
         'home_score_team' => 90,
         'guest_score_team' => 70,
     ],
     [
-        'squad_home' => 'Venezia',
-        'squad_trasfert' => 'Cagliari',
+        'home_team' => 'Venezia',
+        'guest_team' => 'Cagliari',
         'home_score_team' => 40,
         'guest_score_team' => 55,
     ],
@@ -52,10 +52,10 @@ $matches = [
 
 <body>
 
-    <?php foreach ($mathes as $match) : ?>
+    <?php foreach ($matches as $match) : ?>
 
         <p>
-            <?= $match['home_team'] ?> - <?= $match['guest_team'] ?> | <?= $match['home_score_team'] ?> - <?= $match['guest_score_team'] ?>
+            <?= $match['home_team'] ?> - <?= $match['guest_team'] ?> | <?= $match['home_score_team'] ?>-<?= $match['guest_score_team'] ?>
         </p>
 
     <?php endforeach; ?>
